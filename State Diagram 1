@@ -10,3 +10,4 @@ stateDiagram
     EditProfile --> UserProfile: Save Changes
     Like --> RecipeDetails: Unlike Recipe
     Share --> RecipeDetails: Close Share Dialog
+
