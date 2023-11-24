@@ -1,67 +1,70 @@
 classDiagram
   class User {
-    +UserID: int
-    +Username: string
-    +Email: string
-    +Password: string
-    +ProfilePicture: string
-    +FavoritesList: List<string>
-    +login(): void
+    -UserID: int
+    -Username: string
+    -Email: string
+    -Password: string
+    -ProfilePicture: string
+    -FavoritesList: List<string>
+
+    +login(): bool
     +logout(): void
   }
 
   class Recipe {
-    +RecipeID: int
-    +Title: string
-    +Description: string
-    +Ingredients: string
-    +Instructions: string
-    +NutritionalInfo: string
-    +CategoryTags: List<string>
+    -RecipeID: int
+    -Title: string
+    -Description: string
+    -Ingredients: string
+    -Instructions: string
+    -NutritionalInfo: string
+    -CategoryTags: List<string>
+
     +getDetails(): string
   }
 
   class Chef {
-    +ChefID: int
-    +Name: string
-    +Bio: string
-    +VideoUploads: List<string>
-    +ContactInfo: string
+    -ChefID: int
+    -Name: string
+    -Bio: string
+    -VideoUploads: List<string>
+    -ContactInfo: string
   }
 
   class Doctor {
-    +DoctorID: int
-    +Name: string
-    +Title: string
-    +Headshot: string
-    +ContactInfo: string
-    +writeArticle(): void
+    -DoctorID: int
+    -Name: string
+    -Title: string
+    -Headshot: string
+    -ContactInfo: string
+
+    +writeArticle(articleContent: string): void
   }
 
   class Testimonial {
-    +TestimonialID: int
-    +Content: string
-    +Rating: int
-    +Date: DateTime
+    -TestimonialID: int
+    -Content: string
+    -Rating: int
+    -Date: DateTime
   }
 
   class Inquiry {
-    +InquiryID: int
-    +UserID: int
-    +Question: string
-    +Response: string
-    +Date: DateTime
+    -InquiryID: int
+    -UserID: int
+    -Question: string
+    -Response: string
+    -Date: DateTime
   }
 
   class FAQ {
-    +FAQID: int
-    +Question: string
-    +Answer: string
+    -FAQID: int
+    -Question: string
+    -Answer: string
   }
 
   class Disclaimer {
-    +DisclaimerID: int
-    +Content: string
+    -DisclaimerID: int
+    -Content: string
   }
 
   User "1" --> "*" Recipe : has
