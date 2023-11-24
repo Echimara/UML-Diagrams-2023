@@ -1,0 +1,19 @@
+# Core Components
+
+[User Interface |
+  + Homepage
+  + RecipeBrowser
+  + UserProfilePage
+]
+
+[Business Logic |
+  + RecipeManager
+  + UserManager
+]
+
+[Data Management |
+  + Database
+]
+
+[User Interface] --> [Business Logic]
+[Business Logic] --> [Data Management]
