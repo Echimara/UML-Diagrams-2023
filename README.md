@@ -1,6 +1,6 @@
-# UML-Diagrams-2023
-
-Diagrams use mermaid.js and nomnoml.com
+# The Magenta
+## UML-Diagrams-2023
+Diagrams use `mermaid.js` and `Nomnoml`, which is a domain-specific language (DSL).
 
  ## [Mermaid API](https://mermaid.js.org/config/setup/README.html)
 To deploy mermaid without a bundler, insert a script tag with an absolute address and a mermaid.initialize call into the HTML using the following example:
