@@ -1,0 +1,15 @@
+# User Interface Components
+
+[User Interface |
+  + Homepage
+  + RecipeBrowser
+  + UserProfilePage
+  + RecipeDetailsPage
+  + AuthenticationForm
+]
+
+[User Interface] --> [Homepage]
+[User Interface] --> [RecipeBrowser]
+[User Interface] --> [UserProfilePage]
+[User Interface] --> [RecipeDetailsPage]
+[User Interface] --> [AuthenticationForm]
