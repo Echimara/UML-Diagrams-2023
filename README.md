@@ -1,3 +1,3 @@
 # UML-Diagrams-2023
 
-Diagrams use mermaid code
+Diagrams use `mermaid` code and nomnoml.com
