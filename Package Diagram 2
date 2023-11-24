@@ -1,0 +1,21 @@
+# Interaction and Content Management Package Diagram
+
+[Interaction Management |
+  + Comment
+  + Like
+  + Share
+]
+
+[Content Management |
+  + Category
+  + Tag
+  + Collection
+]
+
+[Interaction Management] --> [Comment]
+[Interaction Management] --> [Like]
+[Interaction Management] --> [Share]
+
+[Content Management] --> [Category]
+[Content Management] --> [Tag]
+[Content Management] --> [Collection]
