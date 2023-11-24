@@ -1,11 +1,32 @@
 # User Management Package Diagram
 
+# User Management Package Diagram
+
 [User Management |
-  + User
-  + UserProfile
-  + Authentication
+  - User
+    + UserID: int
+    + Username: string
+    + Email: string
+    + Password: string
+    - RegistrationDate: DateTime = Now()
+    + createUser(username: string, email: string, password: string): User
+    + updateUser(userID: int, username: string, email: string): void
+
+  - UserProfile
+    + UserID: int
+    + FirstName: string
+    + LastName: string
+    + DateOfBirth: DateTime
+    + Gender: string
+    + updateProfile(userID: int, firstName: string, lastName: string, dateOfBirth: DateTime, gender: string): void
+
+  - Authentication
+    + authenticate(username: string, password: string): bool
+    + generateAuthToken(userID: int): string
+    + validateAuthToken(token: string): bool
 ]
 
 [User Management] --> [User]
 [User Management] --> [UserProfile]
 [User Management] --> [Authentication]
+
