@@ -1,0 +1,13 @@
+# Business Logic Components
+
+[Business Logic |
+  + UserManager
+  + RecipeManager
+  + InteractionManager
+  + ContentManager
+]
+
+[Business Logic] --> [UserManager]
+[Business Logic] --> [RecipeManager]
+[Business Logic] --> [InteractionManager]
+[Business Logic] --> [ContentManager]
