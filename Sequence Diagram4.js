@@ -1,5 +1,3 @@
-# For browsing the site
-
 sequenceDiagram
     participant User
     participant System
@@ -8,32 +6,32 @@ sequenceDiagram
     participant TestimonialPage
     participant ADoctorsCornerPage
 
-    User->>System: Log In(username: string, password: string): bool
+    User->>System: Log In(username, password)
     activate System
 
-    User->>System: View Chef Videos(userID: int): VideoList
+    User->>System: View Chef Videos(userID)
     activate System
-    System->>ChefCathyCooks: FetchChefVideos(userID: int): VideoList
+    System->>ChefCathyCooks: Fetch Chef Videos(userID)
     ChefCathyCooks-->>System: List of Chef Videos
     deactivate System
 
-    User->>System: View Disclaimer Page(userID: int): DisclaimerContent
+    User->>System: View Disclaimer Page(userID)
     activate System
-    System->>DisclaimerPage: FetchDisclaimerContent(userID: int): DisclaimerContent
-    DisclaimerPage-->>System: Disclaimer Page Content
+    System->>DisclaimerPage: Fetch Disclaimer Content(userID)
+    DisclaimerPage-->>System: Disclaimer Content
     deactivate System
 
-    User->>System: View Testimonial Page(userID: int): TestimonialContent
+    User->>System: View Testimonial Page(userID)
     activate System
-    System->>TestimonialPage: FetchTestimonialContent(userID: int): TestimonialContent
-    TestimonialPage-->>System: Testimonial Page Content
+    System->>TestimonialPage: Fetch Testimonial Content(userID)
+    TestimonialPage-->>System: Testimonial Content
     deactivate System
 
-    User->>System: View Doctor's Corner(userID: int): DoctorCornerContent
+    User->>System: View Doctor's Corner(userID)
     activate System
-    System->>ADoctorsCornerPage: FetchDoctorCornerContent(userID: int): DoctorCornerContent
-    ADoctorsCornerPage-->>System: Doctor's Corner Content
+    System->>ADoctorsCornerPage: Fetch Doctor Corner Content(userID)
+    ADoctorsCornerPage-->>System: Doctor Corner Content
     deactivate System
 
-    User->>System: Log Out(userID: int): void
+    User->>System: Log Out(userID)
     deactivate System
