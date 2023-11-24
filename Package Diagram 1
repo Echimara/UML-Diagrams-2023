@@ -1,0 +1,11 @@
+# User Management Package Diagram
+
+[User Management |
+  + User
+  + UserProfile
+  + Authentication
+]
+
+[User Management] --> [User]
+[User Management] --> [UserProfile]
+[User Management] --> [Authentication]
