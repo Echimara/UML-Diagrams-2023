@@ -1,6 +1,6 @@
 # UML-Diagrams-2023
 
-Diagrams use `mermaid` code and nomnoml.com
+Diagrams use mermaid.js and nomnoml.com
 
  ## [Mermaid API](https://mermaid.js.org/config/setup/README.html)
 To deploy mermaid without a bundler, insert a script tag with an absolute address and a mermaid.initialize call into the HTML using the following example:
