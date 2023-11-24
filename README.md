@@ -1,4 +1,3 @@
-# The Magenta
 ![Logo](https://github.com/Echimara/UML-Diagrams-2023/blob/main/the-magenta-high-resolution-logo-transparent.png)
 
 ## UML-Diagrams-2023
