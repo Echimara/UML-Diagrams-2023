@@ -1,4 +1,6 @@
 # The Magenta
+![Logo](https://github.com/Echimara/UML-Diagrams-2023/raw/main/assets/123244902/5905fdea-bf88-471b-93c5-90379b5e67fa.png)
+
 ## UML-Diagrams-2023
 Diagrams use `mermaid.js` and `Nomnoml`, which is a domain-specific language (DSL).
 
